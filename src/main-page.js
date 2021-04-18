@@ -1,3 +1,4 @@
+import { contact } from './contact';
 import { home } from './home';
 import {addListener} from './index'
 import {menuCopa} from './menu'
@@ -45,7 +46,7 @@ const changueStatus = () => {
                 menuCopa()
             break;
             case 'Contacto':
-                console.log(3);
+                contact();
             break;
         }
     }))

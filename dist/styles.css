@@ -78,7 +78,7 @@ main .home {
 }
 
 main .home img {
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
@@ -196,4 +196,11 @@ footer img{
 .img-wrapper:hover h2
 {
 	transform: perspective(100px) rotateY(0deg);
+}
+
+.contactImage{
+    
+    background-size: cover;
+    border-radius: 10%;
+    /* margin: 2rem; */
 }
