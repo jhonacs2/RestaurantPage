@@ -1,10 +1,12 @@
+const content = document.querySelector('#content');
+const divPollo = document.createElement('div');
+const h1 = document.createElement('h1');
+const img = document.createElement('img');
+const p = document.createElement('p')
+const main = document.createElement('main');
+
 const home = () => {
-    const content = document.querySelector('#content');
-    const divPollo = document.createElement('div');
-    const h1 = document.createElement('h1');
-    const img = document.createElement('img');
-    const p = document.createElement('p')
-    const main = document.createElement('main');
+   
     main.classList.add('principal');
     divPollo.classList.add('home');
     h1.textContent = 'Pollos Copacabana';
@@ -16,5 +18,6 @@ const home = () => {
     divPollo.appendChild(img);
     divPollo.appendChild(p);
 }
+
 
 export{home}

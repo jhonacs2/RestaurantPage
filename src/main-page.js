@@ -1,4 +1,6 @@
+import { home } from './home';
 import {addListener} from './index'
+import {menuCopa} from './menu'
 
 const menu = () => {
     const divmain = document.querySelector('#content');
@@ -27,20 +29,20 @@ const menu = () => {
     navBar.appendChild(menu);
     navBar.appendChild(contact);
 
-    changueStatus();
 }
 
 const changueStatus = () => {
     const selectNav = document.querySelectorAll('.menu a');
+    const casita = document.querySelector('.home');
     selectNav.forEach(element => element.addEventListener('click', e => {
         
         switch (e.target.textContent){
             case 'Home':
-                const main = document.querySelector('main');
-                console.log(main)
+                casita.innerHTML = '';
+                home();
             break;
             case 'Menu':
-                console.log(2);
+                menuCopa()
             break;
             case 'Contacto':
                 console.log(3);
@@ -49,4 +51,4 @@ const changueStatus = () => {
     }))
 }
 
-export{menu}
+export{menu,changueStatus}

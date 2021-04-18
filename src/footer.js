@@ -10,7 +10,8 @@ const footer = () => {
     img.src= '../img/github-sign.svg';
     img.alt = 'github';
 
-    content.appendChild(footer);
+    document.body.appendChild(footer);
+    // content.appendChild(footer);
     footer.appendChild(p);
     footer.appendChild(a);
     a.appendChild(img);

@@ -87,6 +87,12 @@ main .home p {
     margin: 1rem;
 }
 
+.menucito{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 footer{
     width: 100%;
     /* overflow: hidden; */
@@ -111,4 +117,83 @@ footer a{
 footer img{
    /* background-color: wheat;s */
    width: 30%;
+}
+
+/* .menu-food{
+ width: 100%;
+ max-width: 1000px;
+ display: flex;
+ flex-direction: row;
+ 
+} */
+
+.image-area{
+    width: 50%;
+}
+
+.img-wrapper
+{
+	width: 200px;
+    border-radius: 10%;
+    margin: 1rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.img-wrapper:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 180%;
+	height: 100%;
+	width: 100%;
+	background: rgba(220, 255, 23, 0.3);
+	z-index: 1;
+	transform: skew(45deg);
+	transition: .5s;
+}
+
+
+.img-wrapper:hover:before
+{
+	left: -180%;
+}
+
+.img-wrapper img
+{
+	
+	width: 100px;
+    background-size: cover;
+	filter: grayscale(100%);
+	transition: 2s;
+}
+.img-wrapper:hover img
+{
+	filter: grayscale(0%);
+	transform: scale(1.1);
+}
+
+.img-wrapper h2
+{
+	background: rgb(226, 44, 12);
+	font-family: Poppins;
+    font-size: 1rem;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 5px 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	transform: perspective(200px) rotateY(90deg);
+	transform-origin: right;
+	transition: 1s;
+}
+
+
+.img-wrapper:hover h2
+{
+	transform: perspective(100px) rotateY(0deg);
 }
