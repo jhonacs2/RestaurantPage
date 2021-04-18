@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+.content{
+    width: 100%;
+    max-width: 1000px;
+}
+
+header{
+    background-color: rgb(68, 158, 209);;
+}
+
+
+header .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.principal-menu{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+header .menu a {
+    margin: 0 20px;
+    color: rgb(235, 12, 12);
+    padding-bottom: 9px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 1em;
+}
+
+header .menu a:hover {
+   border-bottom: 2px solid rgb(255, 241, 46);
+}
+
+
+main {
+    height: 798px;
+    background: url('../img/ppolli.jpg') center center no-repeat fixed;
+    background-size:cover ;
+    background-color: salmon;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main .home {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(228, 34, 34, 0.7);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: yellow;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+main .home img {
+    width: 60%;
+    margin: auto;
+}
+
+main .home h1,
+main .home p {
+    margin: 1rem;
+}
+
+footer{
+    width: 100%;
+    /* overflow: hidden; */
+    background: rgba(228, 34, 34, 0.9);
+    padding: 41px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer p{
+    /* display: inline; */
+    color: antiquewhite;
+}
+
+footer a{
+    width: 5%;
+}
+
+footer img{
+   /* background-color: wheat;s */
+   width: 30%;
+}
